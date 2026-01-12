@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/BOBINAGE.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>LinkedIn Banner</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #452769;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    .banner {
+        width: 1584px;
+        height: 396px;
+        background: linear-gradient(135deg, #1a1446, #2b1b6f);
+        display: flex;
+        align-items: center;
+        padding-left: 120px;
+        box-sizing: border-box;
+    }
+
+    .content {
+        color: white;
+    }
+
+    .name {
+        font-size: 56px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    .dept {
+        margin-top: 12px;
+        font-size: 28px;
+        color: #bfa8ff;
+    }
+
+    .school {
+        margin-top: 6px;
+        font-size: 22px;
+        opacity: 0.85;
+    }
+
+    .line {
+        margin-top: 20px;
+        width: 120px;
+        height: 4px;
+        background: #8f7cff;
+        border-radius: 4px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="banner">
+    <div class="content">
+        <div class="name">DOURSAF ZARAA</div>
+        <div class="dept">Electrical Engineering – Electrotechnics</div>
+        <div class="school">National Polytechnic School (ENP) – Algeria</div>
+        <div class="line"></div>
+    </div>
+</div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
